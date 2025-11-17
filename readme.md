@@ -1,8 +1,7 @@
 # Pioneering Tomorrow’s AI Innovations
 
 **Assignment:** AI Future Directions
-**Author:** [Your Name]
-**Date:** [Current Date]
+**Author:** FADHILI ANICETUS
 
 ---
 
@@ -59,19 +58,19 @@ The diagram below illustrates how data moves from the farm to the actionable ins
 ```mermaid
 graph TD
     subgraph "The Edge (Farm)"
-        S1[Moisture Sensor] --> M[Microcontroller (ESP32/Raspberry Pi)]
-        S2[Temp Sensor] --> M
-        S3[Camera] --> AI[Edge AI Model (TFLite)]
+        S1["Moisture Sensor"] --> M["Microcontroller (ESP32/Raspberry Pi)"]
+        S2["Temp Sensor"] --> M
+        S3["Camera"] --> AI["Edge AI Model (TFLite)"]
         AI --> M
     end
 
-    M -- MQTT Protocol --> Cloud[IoT Cloud Platform]
+    M -- "MQTT Protocol" --> Cloud["IoT Cloud Platform"]
 
     subgraph "The Cloud"
-        Cloud --> DB[(Database)]
-        DB --> Train[Retrain Global Model]
-        Train --> Dash[Farmer Dashboard]
+        Cloud --> DB[("Database")]
+        DB --> Train["Retrain Global Model"]
+        Train --> Dash["Farmer Dashboard"]
     end
 
-    Dash -- Action --> Act[Smart Irrigation System]
+    Dash -- Action --> Act["Smart Irrigation System"]
 ```
